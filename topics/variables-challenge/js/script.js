@@ -18,7 +18,7 @@ let mrFurious = {
     r: 255,
     g: 225,
     b: 225
-  }
+  },
   shakeAmount: 0
 };
 let skyShade = {
@@ -59,11 +59,13 @@ function draw() {
   push();
   noStroke();
   fill(mrFurious.fill.r, mrFurious.fill.g, mrFurious.fill.b);
-  ellipse(mrFurious.x + random(-4, 4), mrFurious.y, mrFurious.size);
+  ellipse(mrFurious.x + random(-mrFurious.shakeAmount, mrFurious.shakeAmount), mrFurious.y, mrFurious.size);
   pop();
 // MrFurious gets progressively more red
   mrFurious.fill.g = mrFurious.fill.g + -0.75
   mrFurious.fill.b = mrFurious.fill.b + -0.75
+  mrFurious.shakeAmount = mrFurious.shakeAmount + 0.1
+  constrain(mrFurious.shakeAmount, 0, 4)
   push();
   noStroke();
   fill(bird.fill.r, bird.fill.g, bird.fill.b);
