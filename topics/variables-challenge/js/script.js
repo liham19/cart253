@@ -63,6 +63,7 @@ function draw() {
 // MrFurious gets progressively more red
   mrFurious.fill.g = mrFurious.fill.g + -0.75
   mrFurious.fill.b = mrFurious.fill.b + -0.75
+  mrFurious.x = mrFurious.x + random(-2, 2)
   push();
   noStroke();
   fill(bird.fill.r, bird.fill.g, bird.fill.b);
