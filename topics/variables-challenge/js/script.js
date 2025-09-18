@@ -27,6 +27,18 @@ let skyShade = {
         b: 200
     }
 }
+// Bird incoming
+let bird = {
+    x: 50,
+    y: 10,
+    size: 20,
+    // Colour
+    fill: {
+        r: 180,
+        g: 255,
+        b: 255
+    }
+}
 /**
  * Create the canvas
  */
