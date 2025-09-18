@@ -30,8 +30,8 @@ let skyShade = {
 // Bird incoming
 let bird = {
     x: 50,
-    y: 10,
-    size: 20,
+    y: 80,
+    size: 35,
     // Colour
     fill: {
         r: 180,
@@ -63,4 +63,8 @@ function draw() {
 // MrFurious gets progressively more red
   mrFurious.fill.g = mrFurious.fill.g + -0.75
   mrFurious.fill.b = mrFurious.fill.b + -0.75
+  push();
+  noStroke();
+  fill(bird.fill.r, bird.fill.g, bird.fill.b);
+  ellipse(bird.x, bird.y, bird.size)
 }
