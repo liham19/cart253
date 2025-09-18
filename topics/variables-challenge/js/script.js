@@ -40,6 +40,6 @@ function draw() {
   ellipse(mrFurious.x, mrFurious.y, mrFurious.size);
   pop();
 // MrFurious gets progressively more red
-  mrFurious.fill.g = mrFurious.fill.g + -1
-  mrFurious.fill.b = mrFurious.fill.b + -1
+  mrFurious.fill.g = mrFurious.fill.g + -0.75
+  mrFurious.fill.b = mrFurious.fill.b + -0.75
 }
