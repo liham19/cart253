@@ -34,9 +34,9 @@ let bird = {
     size: 35,
     // Colour
     fill: {
-        r: 180,
+        r: 140,
         g: 255,
-        b: 255
+        b: 140
     }
 }
 /**
@@ -67,4 +67,6 @@ function draw() {
   noStroke();
   fill(bird.fill.r, bird.fill.g, bird.fill.b);
   ellipse(bird.x, bird.y, bird.size)
+  bird.x = bird.x + random(1, 3);
+  bird.y = bird.y + random(-2, 1)
 }
