@@ -19,6 +19,7 @@ let mrFurious = {
     g: 225,
     b: 225
   }
+  shakeAmount: 0
 };
 let skyShade = {
     fill: {
