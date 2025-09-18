@@ -58,12 +58,11 @@ function draw() {
   push();
   noStroke();
   fill(mrFurious.fill.r, mrFurious.fill.g, mrFurious.fill.b);
-  ellipse(mrFurious.x, mrFurious.y, mrFurious.size);
+  ellipse(mrFurious.x + random(-4, 4), mrFurious.y, mrFurious.size);
   pop();
 // MrFurious gets progressively more red
   mrFurious.fill.g = mrFurious.fill.g + -0.75
   mrFurious.fill.b = mrFurious.fill.b + -0.75
-  mrFurious.x = mrFurious.x + random(-2, 2)
   push();
   noStroke();
   fill(bird.fill.r, bird.fill.g, bird.fill.b);
