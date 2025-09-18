@@ -5,9 +5,6 @@
  * A guy who becomes visibly furious!
  */
 
-// Rage variable to make mrFurious more red
-rage: -2
-
 "use strict";
 
 // Our friend Mr. Furious
@@ -22,6 +19,8 @@ let mrFurious = {
     g: 225,
     b: 225
   }
+// rage variable defined
+rage: -2
 };
 
 /**
@@ -42,4 +41,6 @@ function draw() {
   fill(mrFurious.fill.r, mrFurious.fill.g, mrFurious.fill.b);
   ellipse(mrFurious.x, mrFurious.y, mrFurious.size);
   pop();
+
+  mrFurious.;
 }
