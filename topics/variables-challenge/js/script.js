@@ -19,8 +19,6 @@ let mrFurious = {
     g: 225,
     b: 225
   }
-// rage variable defined
-rage: -2
 };
 
 /**
@@ -41,6 +39,7 @@ function draw() {
   fill(mrFurious.fill.r, mrFurious.fill.g, mrFurious.fill.b);
   ellipse(mrFurious.x, mrFurious.y, mrFurious.size);
   pop();
-
-  mrFurious.;
+// MrFurious gets progressively more red
+  mrFurious.fill.g = mrFurious.fill.g + -1
+  mrFurious.fill.b = mrFurious.fill.b + -1
 }
