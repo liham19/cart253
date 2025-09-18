@@ -5,6 +5,9 @@
  * A guy who becomes visibly furious!
  */
 
+// Rage variable to make mrFurious more red
+rage: -2
+
 "use strict";
 
 // Our friend Mr. Furious
@@ -33,7 +36,6 @@ function setup() {
  */
 function draw() {
   background(160, 180, 200);
-  
   // Draw Mr. Furious as a coloured circle
   push();
   noStroke();
