@@ -39,3 +39,12 @@ function drawLiam() {
     drawNeck();
     drawShoulders();
 }
+
+/**
+ * Draws the arm (cursor) using functions
+ */
+function drawArm() {
+    drawForearm();
+    drawPalm();
+    drawFingers();
+}
