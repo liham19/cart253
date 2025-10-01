@@ -166,3 +166,15 @@ function drawHead() {
     quad(122, 250, 310, 270, 268, 325, 180, 330);
     pop();
 }
+
+/**
+ * Function for Liam's hair and beard
+ */
+function drawHair() {
+
+    //Left hand side
+    push();
+    fill(112, 67, 37);
+    rect(105, 90, 50, 100);
+    pop();
+}
