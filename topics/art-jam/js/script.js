@@ -348,5 +348,24 @@ function drawMouth() {
     pop();
 
     //Top lip
+    push();
+    strokeWeight(3);
+    stroke(0, 0, 0);
+    //Left hand side
+    line(200, 282, 215, 280);
+    line(200, 282, 192, 280);
+    //Right hand side
+    line(232, 280, 250, 282);
+    line(258, 280, 250, 282);
+    pop();
+
+    //Mid lip
+    push();
+    strokeWeight(3);
+    stroke(0, 0, 0);
+    noFill();
+    angleMode(DEGREES);
+    arc(223.5, 280, 13, 6, 0, 180);
+    pop();
 
 }
