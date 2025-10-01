@@ -208,4 +208,14 @@ function drawHair() {
     fill(112, 67, 37);
     ellipse(150, 76, 100, 50);
     pop();
+    //Second lump of hair
+    push();
+    fill(112, 67, 37);
+    ellipse(200, 76, 80, 85);
+    pop();
+    //Third lump of hair
+    push();
+    fill(112, 67, 37);
+    ellipse(240, 80, 100, 85);
+    pop();
 }
