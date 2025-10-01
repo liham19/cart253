@@ -344,7 +344,7 @@ function drawMouth() {
     stroke(206, 148, 137);
     noFill();
     angleMode(DEGREES);
-    arc(225, 290, 30, 6, 0, 180);
+    arc(225, 286, 30, 6, 0, 180);
     pop();
 
     //Top lip
