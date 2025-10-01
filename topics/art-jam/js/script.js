@@ -90,14 +90,13 @@ function draw() {
  * Draws myself using functions
  */
 function drawLiam() {
+    drawTorso();
     drawHead();
     drawHair();
     drawEyes();
     drawMouth();
     drawNose();
     drawEyebrows();
-    drawNeck();
-    drawShoulders();
 }
 
 /**
@@ -136,6 +135,27 @@ function updateArm() {
     cursor.y = mouseY;
 }
 
+/**
+ * Function for Liam's neck and shoulders (torso)
+ */
+function drawTorso() {
+
+     //Shoulders
+    push();
+    fill(90, 90, 110);
+    angleMode(DEGREES);
+    arc(225, 405, 380, 190, 180, 0);
+    pop();
+
+    //Neck
+    push();
+    fill(238, 191, 179);
+    angleMode(DEGREES);
+    rect(142, 220, 170, 120);
+    arc(227, 340, 170, 120, 0, 180);
+    pop();
+
+}
 /**
  * Function for Liam's head
  */
