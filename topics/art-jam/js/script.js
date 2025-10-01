@@ -195,4 +195,10 @@ function drawHair() {
     fill(249, 212, 199);
     ellipse(275, 200, 95, 180);
     pop();
+
+    //Top of the forehead to line up the sides more
+    push();
+    fill(249, 212, 199);
+    quad(140, 80, 310, 80, 270, 140, 160, 140);
+    pop();
 }
