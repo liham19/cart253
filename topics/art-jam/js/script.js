@@ -304,3 +304,20 @@ function drawHair() {
     quad(240, 270, 235, 267, 262, 268, 268, 275);
     pop();
 }
+
+function drawEyes() {
+
+    //Arcs for the lashes
+    push();
+    strokeWeight(3);
+    stroke(0, 0, 0);
+    noFill();
+    angleMode(DEGREES);
+    //Left hand side lash
+    arc(175, 190, 30, 25, 220, -20);
+    //Right hand side lash
+    arc(272, 190, 30, 25, 200, -40);
+    pop();
+
+    //Ellipses for the pupils
+}
