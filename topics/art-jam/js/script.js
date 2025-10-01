@@ -160,4 +160,10 @@ function drawHead() {
     fill(249, 212, 199);
     rect(150, 110, 120, 170);
     pop();
+
+    //Drawing the chin
+    push();
+    fill(249, 212, 199);
+    quad(122, 250, 310, 270, 268, 325, 180, 330);
+    pop();
 }
