@@ -259,4 +259,10 @@ function drawHair() {
     fill(249, 212, 199);
     ellipse(268, 192, 110, 140);
     pop();
+
+    //Chin beard
+    push();
+    fill(112, 67, 37);
+    rect(175, 310, 90, 25);
+    pop();
 }
