@@ -164,6 +164,18 @@ function drawHead() {
     fill(249, 212, 199);
     quad(122, 250, 310, 270, 268, 325, 180, 330);
     pop();
+
+    //Drawing the ears
+    //Left hand side ear
+    push();
+    fill(249, 212, 199);
+    ellipse(120, 180, 50, 100);
+    pop();
+    //Right hand side ear
+    push();
+    fill(249, 212, 199);
+    ellipse(335, 180, 60, 100);
+    pop();
 }
 
 /**
