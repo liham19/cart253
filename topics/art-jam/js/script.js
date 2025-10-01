@@ -223,4 +223,13 @@ function drawHair() {
     fill(112, 67, 37);
     ellipse(305, 80, 90, 60);
     pop();
+
+    //Hair strands
+    push();
+    strokeWeight(3);
+    stroke(112, 67, 37);
+    noFill();
+    angleMode(DEGREES);
+    arc(160, 72, 50, 50, 80, 20);
+    pop();
 }
