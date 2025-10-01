@@ -92,7 +92,6 @@ function draw() {
 function drawLiam() {
     drawHead();
     drawHair();
-    drawEar();
     drawEyes();
     drawMouth();
     drawNose();
