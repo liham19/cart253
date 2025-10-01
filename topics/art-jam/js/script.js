@@ -33,7 +33,12 @@ let rightEyebrow = {
     //RIGHT Eyebrow position and colour
     x: 0,
     y: 0,
-    fill: (0, 0, 0)
+    fill: (0, 0, 0),
+    //RIGHT Eyebrow movement
+    velocity: {
+        x: 0,
+        y: 0
+    }
 }
 
 /**
@@ -43,7 +48,12 @@ let leftEyebrow = {
     //LEFT Eyebrow position and colour
     x: 0,
     y: 0,
-    fill: (0, 0, 0)
+    fill: (0, 0, 0),
+    //LEFT Eyebrow movement
+    velocity: {
+        x: 0,
+        y: 0
+    }
 }
 
 /**
