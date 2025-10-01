@@ -17,6 +17,27 @@ const cursor = {
     y: 0,
     fill: (0, 0, 0)
 }
+
+/**
+ * The right eyebrow
+ */
+let eyebrowR = {
+    //RIGHT Eyebrow position and colour
+    x: 0,
+    y: 0,
+    fill: (0, 0, 0)
+}
+
+/**
+ * The left eyebrow
+ */
+let eyebrowL = {
+    //LEFT Eyebrow position and colour
+    x: 0,
+    y: 0,
+    fill: (0, 0, 0)
+}
+
 /**
  * Create the canvas
 */
