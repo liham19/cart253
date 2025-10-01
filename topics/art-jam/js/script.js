@@ -15,7 +15,7 @@ const cursor = {
     //Cursor position and colour
     x: undefined,
     y: undefined,
-    fill: (0, 0, 0)
+    fill: "#000000"
 }
 
 /**
@@ -82,8 +82,8 @@ function draw() {
 
     //Functions to draw and update the arm cursor
     updateArm();
-    drawArm();
     checkSignsArm();
+    drawArm();
 }
 
 /**
@@ -97,42 +97,6 @@ function drawLiam() {
     drawMouth();
     drawNose();
     drawEyebrows();
-}
-
-/**
- * Sets the arm position (or hand attached to the arm position) based on the mouse position
- */
-function updateArm() {
-    cursor.x = mouseX;
-    cursor.y = mouseY;
-}
-
-/**
- * Changes the hand sign when the mouse button is being pressed
- */
-function checkSignsArm() {
-    if (mouseIsPressed) {
-        handsign.ok = true;
-    }
-    else {
-        handsign.ok = false;
-    }
-}
-
-/**
- * Draws the arm (cursor) using functions. The hand sign will be drawn differently depending on whether or not the mouse button is being pressed
- */
-function drawArm() {
-    if (handsign.ok) {
-        drawForearm();
-        drawOKPalm();
-        drawOKFingers();
-    }
-    else {
-        drawForearm();
-        drawHIPalm();
-        drawHIFingers();
-    }
 }
 
 /**
@@ -404,5 +368,49 @@ function drawNose() {
     arc(210, 250, 15, 12, -180, -80);
     //Right hand side
     arc(240, 250, 15, 12, 250, 0);
+    pop();
+}
+
+/**
+ * Sets the arm position (or hand attached to the arm position) based on the mouse position
+ */
+function updateArm() {
+    cursor.x = mouseX;
+    cursor.y = mouseY;
+}
+
+/**
+ * Changes the hand sign when the mouse button is being pressed
+ */
+function checkSignsArm() {
+    if (mouseIsPressed) {
+        handsign.ok = true;
+    }
+    else {
+        handsign.ok = false;
+    }
+}
+
+/**
+ * Draws the arm (cursor) using functions. The hand sign will be drawn differently depending on whether or not the mouse button is being pressed
+ */
+function drawArm() {
+    if (handsign.ok) {
+        drawForearm();
+        drawOKPalm();
+        drawOKFingers();
+    }
+    else {
+        drawForearm();
+        drawHIPalm();
+        drawHIFingers();
+    }
+}
+
+function drawForearm() {
+
+    push();
+    fill(cursor.fill);
+    rect(cursor.x, cursor.y, cursor.x + 100, cursor.y + 100);
     pop();
 }
