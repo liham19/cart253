@@ -314,9 +314,9 @@ function drawEyes() {
     push();
     fill(74, 39, 21);
     //Left hand side pupil
-    ellipse(178, 183, 13, 13);
+    ellipse(178, 183, 18, 18);
     //Right hand side pupil
-    ellipse(270, 183, 13, 13);
+    ellipse(270, 183, 18, 18);
     pop();
 
     //Arcs for the lashes
@@ -326,9 +326,9 @@ function drawEyes() {
     noFill();
     angleMode(DEGREES);
     //Left hand side lash
-    arc(175, 190, 30, 25, 220, -20);
+    arc(175, 190, 40, 35, 220, -20);
     //Right hand side lash
-    arc(272, 190, 30, 25, 200, -40);
+    arc(272, 190, 40, 35, 200, -40);
     pop();
 
 }
