@@ -74,6 +74,9 @@ function draw() {
     // Coloured Background
     background(140, 180, 255);
 
+    // No stroke everywhere
+    noStroke();
+
     //Function to draw the portrait
     drawLiam();
 
