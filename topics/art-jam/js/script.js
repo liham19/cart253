@@ -201,4 +201,11 @@ function drawHair() {
     fill(249, 212, 199);
     quad(140, 80, 310, 80, 270, 140, 160, 140);
     pop();
+
+    //Top of the hair
+    //First lump of hair
+    push();
+    fill(112, 67, 37);
+    ellipse(150, 76, 100, 50);
+    pop();
 }
