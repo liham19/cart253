@@ -19,6 +19,14 @@ const cursor = {
 }
 
 /**
+ * Hand sign of the cursor arm
+ */
+const handsign = {
+    //Property that defines the OK hand sign when the mouse is pressed. Starts out false to let the hand be a simple wave.
+    ok: false
+}
+
+/**
  * The right eyebrow
  */
 let eyebrowR = {
