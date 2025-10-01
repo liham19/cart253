@@ -231,5 +231,8 @@ function drawHair() {
     noFill();
     angleMode(DEGREES);
     arc(160, 72, 50, 50, 80, 20);
+    arc(220, 60, 50, 50, 80, 20);
+    arc(270, 68, 50, 50, 280, 0);
+    arc(230, 102, 50, 50, 110, 65);
     pop();
 }
