@@ -241,11 +241,22 @@ function drawHair() {
     push();
     fill(112, 67, 37);
     quad(105, 180, 122, 185, 180, 260, 116, 250);
-    quad(140, 300, 180, 335, 179, 258, 116, 250);
+    quad(140, 300, 180, 335, 179, 258, 116, 249);
     pop();
     //Left hand side beard lineup
     push();
     fill(249, 212, 199);
     ellipse(180, 190, 110, 150);
+    pop();
+    //Right hand side
+    push();
+    fill(112, 67, 37);
+    quad(322, 190, 350, 188, 340, 260, 280, 250);
+    quad(260, 335, 320, 300, 340, 259, 280, 249);
+    pop();
+    //Right hand side beard lineup
+    push();
+    fill(249, 212, 199);
+    ellipse(268, 192, 110, 140);
     pop();
 }
