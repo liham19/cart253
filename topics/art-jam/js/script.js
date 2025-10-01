@@ -383,4 +383,13 @@ function drawNose() {
     angleMode(DEGREES);
     arc(225, 250, 20, 12, 0, 180);
     pop();
+
+    //Straight nostrils
+    push();
+    strokeWeight(3);
+    stroke(0, 0, 0);
+    //Left hand side
+    line(207, 250, 215, 250);
+    //Right hand side
+    line(235, 250, 243, 250);
 }
