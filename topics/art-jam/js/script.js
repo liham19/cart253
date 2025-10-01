@@ -13,6 +13,9 @@
 */
 function setup() {
     createCanvas(400, 400);
+
+    //No boring old cursor for this one
+    noCursor();
 }
 
 
