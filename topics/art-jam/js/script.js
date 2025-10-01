@@ -172,21 +172,27 @@ function drawHead() {
  */
 function drawHair() {
 
-    //Left hand side
+    //Left hand side of the hair
     push();
     fill(112, 67, 37);
     rect(105, 90, 50, 100);
     pop();
 
-    //Right hand side
+    //Right hand side of the hair
     push();
     fill(112, 67, 37);
     rect(280, 90, 70, 100);
     pop();
 
     //Skin lining up the sides of the hair
+    //Left hand side
     push();
     fill(249, 212, 199);
     ellipse(155, 200, 60, 180);
+    pop();
+    //Right hand side
+    push();
+    fill(249, 212, 199);
+    ellipse(275, 200, 95, 180);
     pop();
 }
