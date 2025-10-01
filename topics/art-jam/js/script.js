@@ -140,7 +140,7 @@ function updateArm() {
  */
 function drawTorso() {
 
-     //Shoulders
+    //Shoulders
     push();
     fill(90, 90, 110);
     angleMode(DEGREES);
@@ -341,7 +341,7 @@ function drawMouth() {
     //Bottom lip
     push();
     strokeWeight(3);
-    stroke(0, 0, 0);
+    stroke(206, 148, 137);
     noFill();
     angleMode(DEGREES);
     arc(225, 290, 30, 6, 0, 180);
@@ -368,4 +368,19 @@ function drawMouth() {
     arc(223.5, 280, 13, 6, 0, 180);
     pop();
 
+}
+
+/**
+ * Function for Liam's nose
+ */
+function drawNose() {
+
+    //Middle nose
+    push();
+    strokeWeight(3);
+    stroke(0, 0, 0);
+    noFill();
+    angleMode(DEGREES);
+    arc(225, 250, 20, 12, 0, 180);
+    pop();
 }
