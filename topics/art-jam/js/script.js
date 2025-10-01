@@ -29,7 +29,7 @@ const handsign = {
 /**
  * The right eyebrow
  */
-let eyebrowR = {
+let rightEyebrow = {
     //RIGHT Eyebrow position and colour
     x: 0,
     y: 0,
@@ -39,7 +39,7 @@ let eyebrowR = {
 /**
  * The left eyebrow
  */
-let eyebrowL = {
+let leftEyebrow = {
     //LEFT Eyebrow position and colour
     x: 0,
     y: 0,
