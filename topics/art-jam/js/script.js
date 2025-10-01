@@ -23,3 +23,19 @@ function draw() {
     // Coloured Background
     background(140, 180, 255);
 }
+
+/**
+ * Draws myself using functions
+ */
+function drawLiam() {
+    drawHead();
+    drawHair();
+    drawEar();
+    drawEyes();
+    drawMouth();
+    drawBeard();
+    drawNose();
+    drawEyebrows();
+    drawNeck();
+    drawShoulders();
+}
