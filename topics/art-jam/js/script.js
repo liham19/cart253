@@ -67,3 +67,11 @@ function drawArm() {
     drawPalm();
     drawFingers();
 }
+
+/**
+ * Sets the arm position (or hand attached to the arm position) based on the mouse position
+ */
+function updateArm() {
+    cursor.x = mouseX;
+    cursor.y = mouseY;
+}
