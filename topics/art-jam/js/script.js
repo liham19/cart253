@@ -305,7 +305,19 @@ function drawHair() {
     pop();
 }
 
+/**
+ * Function for Liam's eyes
+ */
 function drawEyes() {
+
+    //Ellipses for the pupils
+    push();
+    fill(74, 39, 21);
+    //Left hand side pupil
+    ellipse(178, 183, 13, 13);
+    //Right hand side pupil
+    ellipse(270, 183, 13, 13);
+    pop();
 
     //Arcs for the lashes
     push();
@@ -319,5 +331,22 @@ function drawEyes() {
     arc(272, 190, 30, 25, 200, -40);
     pop();
 
-    //Ellipses for the pupils
+}
+
+/**
+ * Function for Liam's mouth
+ */
+function drawMouth() {
+
+    //Bottom lip
+    push();
+    strokeWeight(3);
+    stroke(0, 0, 0);
+    noFill();
+    angleMode(DEGREES);
+    arc(225, 290, 30, 6, 0, 180);
+    pop();
+
+    //Top lip
+
 }
