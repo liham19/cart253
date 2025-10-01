@@ -235,4 +235,17 @@ function drawHair() {
     arc(270, 68, 50, 50, 280, 0);
     arc(230, 102, 50, 50, 110, 65);
     pop();
+
+    //Beard
+    //Left hand side
+    push();
+    fill(112, 67, 37);
+    quad(105, 180, 122, 185, 180, 260, 116, 250);
+    quad(140, 300, 180, 335, 179, 258, 116, 250);
+    pop();
+    //Left hand side beard lineup
+    push();
+    fill(249, 212, 199);
+    ellipse(180, 190, 110, 150);
+    pop();
 }
