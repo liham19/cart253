@@ -154,4 +154,10 @@ function drawHead() {
     fill(249, 212, 199);
     ellipse(275, 200, 130, 200);
     pop();
+
+    //Middle of the face
+    push();
+    fill(249, 212, 199);
+    rect(150, 110, 120, 170);
+    pop();
 }
