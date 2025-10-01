@@ -142,7 +142,7 @@ function drawHead() {
 
     //Left hand side
     push();
-    fill(0, 0, 0);
+    fill(249, 212, 199);
     ellipse(160, 200, 130, 200);
     pop();
 }
