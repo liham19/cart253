@@ -183,4 +183,10 @@ function drawHair() {
     fill(112, 67, 37);
     rect(280, 90, 70, 100);
     pop();
+
+    //Skin lining up the sides of the hair
+    push();
+    fill(249, 212, 199);
+    ellipse(155, 200, 60, 180);
+    pop();
 }
