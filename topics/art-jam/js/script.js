@@ -135,3 +135,14 @@ function updateArm() {
     cursor.y = mouseY;
 }
 
+/**
+ * Function for Liam's head
+ */
+function drawHead() {
+
+    //Left hand side
+    push();
+    fill(0, 0, 0);
+    ellipse(160, 200, 130, 200);
+    pop();
+}
