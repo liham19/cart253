@@ -70,6 +70,7 @@ function draw() {
     //Functions to draw and update the arm cursor
     updateArm();
     drawArm();
+    checkSignsArm();
 }
 
 /**
@@ -89,12 +90,31 @@ function drawLiam() {
 }
 
 /**
- * Draws the arm (cursor) using functions
+ * Changes the hand sign when the mouse button is being pressed
+ */
+function checkSignsArm() {
+    if (mouseIsPressed) {
+        handsign.ok = true;
+    }
+    else {
+        handsign.ok = false;
+    }
+}
+
+/**
+ * Draws the arm (cursor) using functions. The hand sign will be drawn differently depending on whether or not the mouse button is being pressed
  */
 function drawArm() {
-    drawForearm();
-    drawPalm();
-    drawFingers();
+    if (handsign.ok) {
+        drawForearm();
+        drawOKPalm();
+        drawOKFingers();
+    }
+    else {
+        drawForearm();
+        drawHIPalm();
+        drawHIFingers();
+    }
 }
 
 /**
@@ -104,3 +124,4 @@ function updateArm() {
     cursor.x = mouseX;
     cursor.y = mouseY;
 }
+
