@@ -9,6 +9,15 @@
 "use strict";
 
 /**
+ * The actual cursor
+ */
+const cursor = {
+    //Cursor position and dimensions
+    x: 0,
+    y: 0,
+    fill: (0, 0, 0)
+}
+/**
  * Create the canvas
 */
 function setup() {
@@ -25,6 +34,13 @@ function setup() {
 function draw() {
     // Coloured Background
     background(140, 180, 255);
+
+    //Function to draw the portrait
+    drawLiam();
+
+    //Functions to draw and update the arm cursor
+    updateArm();
+    drawArm();
 }
 
 /**
