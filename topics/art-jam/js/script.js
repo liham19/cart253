@@ -177,4 +177,10 @@ function drawHair() {
     fill(112, 67, 37);
     rect(105, 90, 50, 100);
     pop();
+
+    //Right hand side
+    push();
+    fill(112, 67, 37);
+    rect(280, 90, 70, 100);
+    pop();
 }
