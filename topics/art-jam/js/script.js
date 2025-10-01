@@ -146,6 +146,12 @@ function drawHead() {
     //Left hand side
     push();
     fill(249, 212, 199);
-    ellipse(160, 200, 130, 200);
+    ellipse(160, 200, 90, 200);
+    pop();
+
+    //Right hand side
+    push();
+    fill(249, 212, 199);
+    ellipse(275, 200, 130, 200);
     pop();
 }
