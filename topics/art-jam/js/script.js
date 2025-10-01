@@ -407,6 +407,9 @@ function drawArm() {
     }
 }
 
+/**
+ * Function for Liam's forearm
+ */
 function drawForearm() {
 
     push();
