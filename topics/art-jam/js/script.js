@@ -12,13 +12,14 @@
  * Create the canvas
 */
 function setup() {
-    createCanvas(400, 400)
+    createCanvas(400, 400);
 }
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Draws myself and the background
 */
 function draw() {
-
+    // Coloured Background
+    background(140, 180, 255);
 }
