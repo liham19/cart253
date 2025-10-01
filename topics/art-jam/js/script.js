@@ -12,7 +12,7 @@
  * The actual cursor
  */
 const cursor = {
-    //Cursor position and dimensions
+    //Cursor position and colour
     x: 0,
     y: 0,
     fill: (0, 0, 0)
