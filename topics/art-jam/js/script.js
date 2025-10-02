@@ -416,7 +416,7 @@ function drawArm() {
     if (handsign.ok) {
         drawForearm();
         drawOKPalm();
-        drawOKFingers();
+        // drawOKFingers();
     }
     else {
         drawForearm();
@@ -471,4 +471,24 @@ function drawHIFingers() {
     line(cursor.x + 75, cursor.y, cursor.x + 75, cursor.y + -115);
     line(cursor.x + 110, cursor.y, cursor.x + 110, cursor.y + -110);
     line(cursor.x + 105, cursor.y + 50, cursor.x + 160, cursor.y);
+}
+
+/**
+ * Function to draw Liam's palm when he's saying OK
+ */
+function drawOKPalm () {
+    
+    //Palm
+    push();
+    fill(237, 192, 164);
+    square(cursor.x, cursor.y + -50, 120, 20, 15, 20, 2);
+    pop();
+
+    //Palm line
+    push();
+    strokeWeight(8);
+    stroke(173, 122, 100);
+    noFill();
+    angleMode(DEGREES);
+    arc(cursor.x + 85, cursor.y + 50, 20, 50, 180, -90);
 }
