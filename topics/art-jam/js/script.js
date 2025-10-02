@@ -46,13 +46,13 @@ let rightEyebrow = {
  */
 let leftEyebrow = {
     //LEFT Eyebrow position and colour
-    x: 0,
-    y: 0,
+    x: 170,
+    y: 165,
     fill: "#613b25ff",
     //LEFT Eyebrow movement
     velocity: {
         x: 0,
-        y: 0
+        y: 20
     }
 }
 
@@ -77,8 +77,8 @@ function draw() {
     // No stroke everywhere
     noStroke();
 
-    //Left eyebrow movement
-    leftEyebrow.y += leftEyebrow.velocity.y;
+    //Eyebrow movement
+    moveEyebrows();
 
     //Function to draw the portrait
     drawLiam();
@@ -384,7 +384,7 @@ function drawEyebrows() {
     stroke(leftEyebrow.fill);
     noFill();
     angleMode(DEGREES);
-    arc(leftEyebrow.x + 170, leftEyebrow.y + 165, 50, 10, 180, 0);
+    arc(leftEyebrow.x, leftEyebrow.y, 50, 10, 180, 0);
     pop();
 
 }
@@ -515,4 +515,12 @@ function drawOKFingers() {
     arc(cursor.x + 125, cursor.y + -5, 50, 100, 180, 40);
     arc(cursor.x + 125, cursor.y + 45, 40, 35, -25, 180);
 
+}
+
+function moveEyebrows() {
+
+    //Left eyebrow raise and fall
+    if (leftEyebrow.y > 100 || leftEyebrow.y < 0) {
+        leftEyebrow.velocity.y *= -1
+    }
 }
