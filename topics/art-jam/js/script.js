@@ -31,13 +31,13 @@ const handsign = {
  */
 let rightEyebrow = {
     //RIGHT Eyebrow position and colour
-    x: 0,
-    y: 0,
-    fill: (0, 0, 0),
+    x: 274,
+    y: 165,
+    fill: "#613b25ff",
     //RIGHT Eyebrow movement
     velocity: {
         x: 0,
-        y: 0
+        y: -2
     }
 }
 
@@ -379,12 +379,22 @@ function drawNose() {
  */
 function drawEyebrows() {
 
+    //Left eyebrow
     push();
     strokeWeight(10);
     stroke(leftEyebrow.fill);
     noFill();
     angleMode(DEGREES);
     arc(leftEyebrow.x, leftEyebrow.y, 50, 10, 180, 0);
+    pop();
+
+    //Right eyebrow
+    push();
+    strokeWeight(10);
+    stroke(rightEyebrow.fill);
+    noFill();
+    angleMode(DEGREES);
+    arc(rightEyebrow.x, rightEyebrow.y, 50, 10, 180, 0);
     pop();
 
 }
@@ -520,10 +530,18 @@ function drawOKFingers() {
 function moveEyebrows() {
 
     //Left eyebrow actual movement
-    leftEyebrow.y += leftEyebrow.velocity.y
+    leftEyebrow.y += leftEyebrow.velocity.y;
+
+    //Right eyebrow actual movement
+    rightEyebrow.y += rightEyebrow.velocity.y;
 
     //Left eyebrow raise and fall
     if (leftEyebrow.y > 170 || leftEyebrow.y < 150) {
         leftEyebrow.velocity.y *= -1
+    };
+
+    //Right eyebrow raise and fall
+    if (rightEyebrow.y > 170 || rightEyebrow.y < 150) {
+        rightEyebrow.velocity.y *= -1
     }
 }
