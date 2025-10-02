@@ -441,10 +441,20 @@ function drawForearm() {
  */
 function drawHIPalm() {
 
+    //Palm
     push();
     fill(237, 192, 164);
     square(cursor.x, cursor.y + -50, 120, 20, 15, 20, 2);
     pop();
+
+    //Palm line
+    push();
+    strokeWeight(8);
+    stroke(173, 122, 100);
+    noFill();
+    angleMode(DEGREES);
+    arc(cursor.x + 85, cursor.y + 50, 50, 50, 180, -60);
+
 }
 
 /**
@@ -452,7 +462,7 @@ function drawHIPalm() {
  */
 function drawHIFingers() {
 
-    push();
+    //Fingers
     push();
     strokeWeight(20);
     stroke(237, 192, 164);
