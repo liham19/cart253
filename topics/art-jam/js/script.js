@@ -442,8 +442,8 @@ function drawForearm() {
 function drawHIPalm() {
 
     push();
-    fill(255, 255, 255);
-    square(cursor.x, cursor.y, 55, 20, 15, 10, 5);
+    fill(237, 192, 164);
+    square(cursor.x, cursor.y + -50, 120, 20, 15, 20, 2);
     pop();
 }
 
