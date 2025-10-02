@@ -454,11 +454,11 @@ function drawHIFingers() {
 
     push();
     push();
-    strokeWeight(3);
-    stroke(255, 100, 100);
-    line(cursor.x + 10, cursor.y + 10, cursor.x + 50, cursor.y + 50);
-    line(cursor.x + 10, cursor.y + 10, cursor.x + 50, cursor.y + 50);
-    line(cursor.x + 10, cursor.y + 10, cursor.x + 50, cursor.y + 50);
-    line(cursor.x + 10, cursor.y + 10, cursor.x + 50, cursor.y + 50);
-    line(cursor.x + 10, cursor.y + 10, cursor.x + 50, cursor.y + 50);
+    strokeWeight(20);
+    stroke(237, 192, 164);
+    line(cursor.x + 10, cursor.y, cursor.x + 10, cursor.y + -100);
+    line(cursor.x + 40, cursor.y, cursor.x + 40, cursor.y + -110);
+    line(cursor.x + 75, cursor.y, cursor.x + 75, cursor.y + -115);
+    line(cursor.x + 110, cursor.y, cursor.x + 110, cursor.y + -110);
+    line(cursor.x + 105, cursor.y + 50, cursor.x + 160, cursor.y);
 }
