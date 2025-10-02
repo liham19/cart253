@@ -15,7 +15,7 @@ const cursor = {
     //Cursor position and colour
     x: undefined,
     y: undefined,
-    fill: "#000000"
+    fill: "#3e394fff"
 }
 
 /**
@@ -432,7 +432,7 @@ function drawForearm() {
 
     push();
     fill(cursor.fill);
-    rect(cursor.x, cursor.y, 100, 100);
+    rect(cursor.x, cursor.y, 110, 700);
     pop();
 }
 
