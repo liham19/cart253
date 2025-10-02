@@ -2,7 +2,7 @@
 
 Liam St-Georges
 
-[View this project online](URL_FOR_THE_RUNNING_PROJECT)
+[View this project online](https://liham19.github.io/cart253/topics/art-jam/)
 
 ## Description
 
