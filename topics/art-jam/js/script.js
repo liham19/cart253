@@ -420,8 +420,8 @@ function drawArm() {
     }
     else {
         drawForearm();
-        // drawHIPalm();
-        // drawHIFingers();
+        drawHIPalm();
+        drawHIFingers();
     }
 }
 
@@ -434,4 +434,31 @@ function drawForearm() {
     fill(cursor.fill);
     rect(cursor.x, cursor.y, 100, 100);
     pop();
+}
+
+/**
+ * Function for Liam's palm when he's waving hello
+ */
+function drawHIPalm() {
+
+    push();
+    fill(255, 255, 255);
+    square(cursor.x, cursor.y, 55, 20, 15, 10, 5);
+    pop();
+}
+
+/**
+ * Function for Liam's fingers when he's waving hello
+ */
+function drawHIFingers() {
+
+    push();
+    push();
+    strokeWeight(3);
+    stroke(255, 100, 100);
+    line(cursor.x + 10, cursor.y + 10, cursor.x + 50, cursor.y + 50);
+    line(cursor.x + 10, cursor.y + 10, cursor.x + 50, cursor.y + 50);
+    line(cursor.x + 10, cursor.y + 10, cursor.x + 50, cursor.y + 50);
+    line(cursor.x + 10, cursor.y + 10, cursor.x + 50, cursor.y + 50);
+    line(cursor.x + 10, cursor.y + 10, cursor.x + 50, cursor.y + 50);
 }
