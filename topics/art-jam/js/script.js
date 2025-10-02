@@ -52,7 +52,7 @@ let leftEyebrow = {
     //LEFT Eyebrow movement
     velocity: {
         x: 0,
-        y: 20
+        y: 2
     }
 }
 
@@ -519,8 +519,11 @@ function drawOKFingers() {
 
 function moveEyebrows() {
 
+    //Left eyebrow actual movement
+    leftEyebrow.y += leftEyebrow.velocity.y
+
     //Left eyebrow raise and fall
-    if (leftEyebrow.y > 100 || leftEyebrow.y < 0) {
+    if (leftEyebrow.y > 170 || leftEyebrow.y < 150) {
         leftEyebrow.velocity.y *= -1
     }
 }
