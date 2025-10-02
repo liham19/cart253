@@ -72,7 +72,7 @@ function setup() {
 */
 function draw() {
     // Coloured Background
-    background(140, 180, 255);
+    background(97, 201, 125);
 
     // No stroke everywhere
     noStroke();
