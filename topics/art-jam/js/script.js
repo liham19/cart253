@@ -78,7 +78,7 @@ function draw() {
     noStroke();
 
     //Left eyebrow movement
-    leftEyebrow.y = leftEyebrow.y - 20;
+    leftEyebrow.y += leftEyebrow.velocity.y;
 
     //Function to draw the portrait
     drawLiam();
@@ -420,8 +420,8 @@ function drawArm() {
     }
     else {
         drawForearm();
-        drawHIPalm();
-        drawHIFingers();
+        // drawHIPalm();
+        // drawHIFingers();
     }
 }
 
@@ -432,6 +432,6 @@ function drawForearm() {
 
     push();
     fill(cursor.fill);
-    rect(cursor.x, cursor.y, cursor.x + 100, cursor.y + 100);
+    rect(cursor.x, cursor.y, 100, 100);
     pop();
 }
