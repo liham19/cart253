@@ -15,7 +15,7 @@ const cursor = {
     //Cursor position and colour
     x: undefined,
     y: undefined,
-    fill: "#000000"
+    fill: "#3e394fff"
 }
 
 /**
@@ -31,13 +31,13 @@ const handsign = {
  */
 let rightEyebrow = {
     //RIGHT Eyebrow position and colour
-    x: 0,
-    y: 0,
-    fill: (0, 0, 0),
+    x: 274,
+    y: 165,
+    fill: "#613b25ff",
     //RIGHT Eyebrow movement
     velocity: {
         x: 0,
-        y: 0
+        y: -2
     }
 }
 
@@ -46,13 +46,13 @@ let rightEyebrow = {
  */
 let leftEyebrow = {
     //LEFT Eyebrow position and colour
-    x: 0,
-    y: 0,
+    x: 170,
+    y: 165,
     fill: "#613b25ff",
     //LEFT Eyebrow movement
     velocity: {
         x: 0,
-        y: 0
+        y: 2
     }
 }
 
@@ -72,13 +72,13 @@ function setup() {
 */
 function draw() {
     // Coloured Background
-    background(140, 180, 255);
+    background(97, 201, 125);
 
     // No stroke everywhere
     noStroke();
 
-    //Left eyebrow movement
-    leftEyebrow.y = leftEyebrow.y - 20;
+    //Eyebrow movement
+    moveEyebrows();
 
     //Function to draw the portrait
     drawLiam();
@@ -379,12 +379,22 @@ function drawNose() {
  */
 function drawEyebrows() {
 
+    //Left eyebrow
     push();
     strokeWeight(10);
     stroke(leftEyebrow.fill);
     noFill();
     angleMode(DEGREES);
-    arc(leftEyebrow.x + 170, leftEyebrow.y + 165, 50, 10, 180, 0);
+    arc(leftEyebrow.x, leftEyebrow.y, 50, 10, 180, 0);
+    pop();
+
+    //Right eyebrow
+    push();
+    strokeWeight(10);
+    stroke(rightEyebrow.fill);
+    noFill();
+    angleMode(DEGREES);
+    arc(rightEyebrow.x, rightEyebrow.y, 50, 10, 180, 0);
     pop();
 
 }
@@ -432,6 +442,106 @@ function drawForearm() {
 
     push();
     fill(cursor.fill);
-    rect(cursor.x, cursor.y, cursor.x + 100, cursor.y + 100);
+    rect(cursor.x, cursor.y, 110, 700);
     pop();
+}
+
+/**
+ * Function for Liam's palm when he's waving hello
+ */
+function drawHIPalm() {
+
+    //Palm
+    push();
+    fill(237, 192, 164);
+    square(cursor.x, cursor.y + -50, 120, 20, 15, 20, 2);
+    pop();
+
+    //Palm line
+    push();
+    strokeWeight(8);
+    stroke(173, 122, 100);
+    noFill();
+    angleMode(DEGREES);
+    arc(cursor.x + 85, cursor.y + 50, 50, 50, 180, -60);
+
+}
+
+/**
+ * Function for Liam's fingers when he's waving hello
+ */
+function drawHIFingers() {
+
+    //Fingers
+    push();
+    strokeWeight(20);
+    stroke(237, 192, 164);
+    line(cursor.x + 10, cursor.y, cursor.x + 10, cursor.y + -100);
+    line(cursor.x + 40, cursor.y, cursor.x + 40, cursor.y + -110);
+    line(cursor.x + 75, cursor.y, cursor.x + 75, cursor.y + -115);
+    line(cursor.x + 110, cursor.y, cursor.x + 110, cursor.y + -110);
+    line(cursor.x + 105, cursor.y + 50, cursor.x + 160, cursor.y);
+}
+
+/**
+ * Function to draw Liam's palm when he's saying OK
+ */
+function drawOKPalm () {
+    
+    //Palm
+    push();
+    fill(237, 192, 164);
+    square(cursor.x, cursor.y + -50, 120, 20, 15, 20, 2);
+    pop();
+
+    //Palm line
+    push();
+    strokeWeight(8);
+    stroke(173, 122, 100);
+    noFill();
+    angleMode(DEGREES);
+    arc(cursor.x + 85, cursor.y + 50, 20, 50, 180, -90);
+}
+
+/**
+ * Function to draw Liam's fingers when he's saying OK
+ */
+function drawOKFingers() {
+
+    //First three fingers
+    push();
+    strokeWeight(20);
+    stroke(237, 192, 164);
+    line(cursor.x + 10, cursor.y, cursor.x + 10, cursor.y + -100);
+    line(cursor.x + 40, cursor.y, cursor.x + 40, cursor.y + -110);
+    line(cursor.x + 75, cursor.y, cursor.x + 75, cursor.y + -115);
+
+    //Index and thumb
+    push();
+    strokeWeight(20);
+    stroke(237, 192, 164);
+    noFill();
+    angleMode(DEGREES);
+    arc(cursor.x + 125, cursor.y + -5, 50, 100, 180, 40);
+    arc(cursor.x + 125, cursor.y + 45, 40, 35, -25, 180);
+
+}
+
+function moveEyebrows() {
+
+    //Left eyebrow actual movement
+    leftEyebrow.y += leftEyebrow.velocity.y;
+
+    //Right eyebrow actual movement
+    rightEyebrow.y += rightEyebrow.velocity.y;
+
+    //Left eyebrow raise and fall
+    if (leftEyebrow.y > 170 || leftEyebrow.y < 150) {
+        leftEyebrow.velocity.y *= -1
+    };
+
+    //Right eyebrow raise and fall
+    if (rightEyebrow.y > 170 || rightEyebrow.y < 150) {
+        rightEyebrow.velocity.y *= -1
+    }
 }
